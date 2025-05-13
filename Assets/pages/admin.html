@@ -77,6 +77,15 @@
                         </svg>
                     </button>
                 </li>
+                <li class="lateral-content-list nav-item">
+                    <button class="cta nav-button" data-target="Pedidos">
+                        <span>Pedidos</span>
+                        <svg width="15px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+                </li>
             </ul>
         </div>
 
@@ -250,6 +259,8 @@
                     <tr>
                         <th>Nombre</th>
                         <th>Correo</th>
+                        <th>Telefono</th>
+                        <th>Direccion</th>
                         <th>N° de Compras Realizadas</th>
                         <th>Acciones</th>
                     </tr>
@@ -258,6 +269,8 @@
                     <tr>
                         <td>Carlos Perez</td>
                         <td>carlitos@gmail.com</td>
+                        <td>3114529068</td>
+                        <td>Cra 45 # 23-45</td>
                         <td>7</td>
                         <td>
                             <div class="content-buttons">
@@ -320,6 +333,8 @@
                     <div class="modal-body">
                         <input type="text" class="btnSesion editar-inputs" id="nombrecliente" placeholder="Nombre Completo">
                         <input type="text" class="btnSesion editar-inputs" id="correoCliente" placeholder="correo electronico">
+                        <input type="number" class="btnSesion editar-inputs" id="numeroTelefonoCliente" placeholder="Telefono">
+                        <input type="text" class="btnSesion editar-inputs" id="direccionCliente" placeholder="Direccion">
                         <input type="number" class="btnSesion editar-inputs" id="numeroComprasR" placeholder="N° de compras realizadas">
                     </div>
                     <div class="modal-footer">
@@ -370,6 +385,40 @@
             </div>
         </div>
     </div>
+    <!--Pedidos-->
+        <div id="Pedidos" class="section products-clients">
+            <h2>Pedidos</h2>
+            <table class="list-style" id="tabla-clientes" >
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>fecha</th>
+                        <th>Numero de Compras Realizadas</th>
+                        <th>Total</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Carlos Perez</td>
+                        <td>carlitos@gmail.com</td>
+                        <td>02-05-2025</td>
+                        <td>7</td>
+                        <td>$ 1.400.000</td>
+                        <td>Pendiente</td>
+                    </tr>
+                    <tr>
+                        <td>Valentina Restrepo</td>
+                        <td>vale@gmail.com</td>
+                        <td>12-03-2025</td>
+                        <td>2</td>
+                        <td>$ 400.000</td>
+                        <td>Entregado</td>
+                    </tr>
+                </tbody>       
+            </table> 
+        </div>
     </div>
     <!--Char js-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
