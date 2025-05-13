@@ -16,6 +16,17 @@ var myChart = new Chart(ctx, {
         }]
     }
 });
+var ctx = document.getElementById('myChart2').getContext('2d')
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Enero', 'Febrero', 'Marzo','Abril','Mayo','Junio','Julio'],
+        datasets: [{
+            label: 'Usuarios',
+            data: [59, 80, 74,60,67,90,82],
+        }]
+    }
+});
 
 const cerrarAdmin = document.getElementById('closeAdmin');
 cerrarAdmin.onclick = function () {

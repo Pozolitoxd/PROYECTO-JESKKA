@@ -213,17 +213,24 @@
     color: black;
 }
 /*graficos*/
-.general-grafico{
+.general-content-graficas {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: space-between; 
+    gap: 20px;
+    width: 100%; 
+    margin-top: 5em;
+}
+.general-grafico {
+    flex: 1; 
+    max-width: 48%; 
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
-    margin-top:3em;
 }
 .grafico{
-    width: 700px;
-    height: 400px;
+    width: 500px;
+    height: 300px;
     background-color: #ffffff;    
     border: none;
     border-radius: 12px;
