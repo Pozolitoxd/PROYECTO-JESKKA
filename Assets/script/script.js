@@ -16,18 +16,30 @@ document.querySelectorAll('.splide').forEach((carrusel) => {
     },
   }).mount();
 });
-//validacion inicio sesion
-const iniciarSesion = document.getElementById('iniciar')
-iniciarSesion.onclick = function () {
-  const email = document.getElementById('email').value;
-  const password = document.getElementById('Contraseña').value;
-  if (email == '' || password == '') {
-    return alert('Rellene los campos por favor')
-  }
-  if (email == 'admin@gmail.com' && password == '123456') {
-    window.location.href = '/Assets/pages/admin.html'
-  }
-}
+// Validación de inicio de sesión
+const iniciarSesion = document.getElementById('iniciarsesion');
+iniciarSesion.onclick = function (event) {
+  event.preventDefault(); 
 
+  const emailInput = document.getElementById('email');
+  const passwordInput = document.getElementById('password');
+  const email = emailInput.value.trim();
+  const password = passwordInput.value.trim();
 
+  emailInput.classList.remove('is-invalid');
+  passwordInput.classList.remove('is-invalid');
+
+  if (email === '' || password === '') {
+    if (email === '') emailInput.classList.add('is-invalid');
+    if (password === '') passwordInput.classList.add('is-invalid');
+    return;
+  }
+
+  if (email === 'admin@gmail.com' && password === '123456') {
+    window.location.href = 'Assets/pages/admin.html';
+  } else {
+    emailInput.classList.add('is-invalid');
+    passwordInput.classList.add('is-invalid');
+  }
+};
 

@@ -62,14 +62,17 @@
               <div class="form-container" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                   aria-hidden="true">
                   <p class="title">Bienvenido</p>
-                  <form class="form">
-                      <input type="email" class="input" placeholder="Email">
-                      <input type="password" class="input" placeholder="contraseña">
-                      <p class="page-link">
-                          <span class="page-link-label">Olvidaste tu contraseña?</span>
-                      </p>
-                      <button class="form-btn">Iniciar Sesion</button>
-                  </form>
+                    <form class="form">
+                      <div class="mb-3">
+                        <input id="email" type="email" class="input form-control" placeholder="Email">
+                        <div class="invalid-feedback">Por favor, ingrese un correo válido.</div>
+                      </div>
+                      <div class="mb-3">
+                        <input id="password" type="password" class="input form-control" placeholder="Contraseña">
+                        <div class="invalid-feedback">Por favor, ingrese una contraseña válida.</div>
+                      </div>
+                      <button id="iniciarsesion" class="btn btn-primary w-100">Iniciar Sesión</button>
+                    </form>
                   <p class="sign-up-label">
                       No tienes cuenta? <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><span
                               class="sign-up-link"> Registrate</span></a>
