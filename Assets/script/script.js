@@ -42,4 +42,4 @@ iniciarSesion.onclick = function (event) {
     passwordInput.classList.add('is-invalid');
   }
 };
-
+ 
