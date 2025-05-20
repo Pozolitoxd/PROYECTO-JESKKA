@@ -2,7 +2,6 @@
       font-family: "Kanit", sans-serif;
       font-style: normal;
     }
-
     .navbar {
       background-color: rgb(240, 240, 240);
       margin-bottom: 3px;
@@ -130,4 +129,7 @@ footer p {
   position: sticky;
   top: 100px;
   z-index: 100;
+}
+.mt-5{
+  margin-bottom: 4em;
 }
