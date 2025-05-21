@@ -442,7 +442,7 @@
     top: 0;
   }
   
-  .bbtn-guardar:focus {
+  .btn-guardar:focus {
     box-shadow: none;
   }
   /*button agregar*/

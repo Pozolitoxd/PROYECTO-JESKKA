@@ -341,7 +341,7 @@ li h5 {
     border-radius: 10px;
     color: #fff;
     font-size: 16px;
-    transform: .3s ease;
+    transform: 0.3s ease;
   }
   
   .submit:hover {
